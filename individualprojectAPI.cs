@@ -17,7 +17,8 @@ public class PictureChanger
     /// Create a queue of manipulations
     /// </summary>
     /// <param name="change">the specific change the user wants to make to the picture. Either
-    /// a horizontal rotation, vert. rotation, degree shift, black/white conversion, or resize
+    /// a horizontal rotation, vert. rotation, degree shift, black/white conversion,  resize, rotate left or right,
+    /// or create a thumbnail
     [Route("/PictureChanger/addChange")]
     [HttpPost]
     public IHttpActionResult addChange([FromBody] ManipulationObject change, int imageID)
